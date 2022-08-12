@@ -1,4 +1,5 @@
 import { projects } from './projectDoc';
+import Accordion from './accordion';
 
 function Projects() {
     return (
@@ -7,9 +8,7 @@ function Projects() {
                 {
                     projects.map((project: any) => (
                         <li key={project.name}>
-                            {project.name}
-                            <p>{project.description}</p>
-                            <a href={project.link}>GitHub</a>
+                            <Accordion title={project.name} description={project.description} link={project.link} />
                         </li>
                     ))
                 }

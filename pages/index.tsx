@@ -7,7 +7,7 @@ import Projects from '../components/projects'
 
 const Home: NextPage = () => {
   return (
-    <div className='w-full h-screen max-w-md bg-gray-700 text-white'>
+    <div className='w-screen h-screen bg-gray-700 text-white'>
       <div className='mx-2'>
         <h1>Projects</h1>
         <Projects />
